@@ -1,4 +1,36 @@
 body {
+  background: #d8eef3;
+  min-height: 1500px;
+}
+
+section {
+  position: relative; 
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+section img {
+ position: absolute; 
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  section img {
+    width: 80%; /* Reduce image width to 80% of the viewport width */
+    max-height: 900px; /* Limit the maximum height of the images to 300 pixels */
+    margin-bottom: 20px; /* Add spacing between images */
+  }
+}
+
+
+
+/* body {
   font-family: verdana;
 }
 
@@ -14,4 +46,4 @@ form > * {
 img {
   height: 20%;
   width: 20%;
-}
+} */
