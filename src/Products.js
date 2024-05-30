@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import ProductImageEditor from './ProductImageEditor';
+import Card from './components/Card';
 
 const Products = ({ products, cartItems, createLineItem, updateLineItem, auth, updateProduct})=> {
   
@@ -10,7 +11,8 @@ const Products = ({ products, cartItems, createLineItem, updateLineItem, auth, u
     <div>
       <h2>Products</h2>
       <input placeholder='search' value={searchParams.get('search') || ''} onChange={(ev) => {setSearchParams(ev.target.value ? {search: ev.target.value} : {})}}/>
-      <ul>
+      <Card />
+      {/* <ul>
         {
           products
           .filter(product => {return !searchParams.get('search') || product.name.indexOf(searchParams.get('search')) !== -1 })
@@ -37,7 +39,7 @@ const Products = ({ products, cartItems, createLineItem, updateLineItem, auth, u
             );
           })
         }
-      </ul>
+      </ul> */}
     </div>
   );
 };
