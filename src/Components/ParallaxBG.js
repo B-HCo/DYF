@@ -21,7 +21,8 @@ const ParallaxBG = () => {
   }, []);
 
   return (
-    <div style={{ background: '#d8eef3', minHeight: '1500px', position: 'relative' }}>
+    // <div style={{ background: '#d8eef3', minHeight: '1500px', position: 'relative' }}>
+    <div>
       <section style={{ position: 'relative', height: '100vh', overflow: 'hidden' }}>
         <img
           src="public/assets/DYFBG.jpg"
@@ -46,7 +47,7 @@ const ParallaxBG = () => {
             height: 'auto',
             objectFit: 'cover',
             position: 'absolute',
-            top: `calc(50% + 32px + ${scrollPosition * 0.5}px)`, // Adjust this value for desired speed and position
+            top: `calc(44% + 32px + ${scrollPosition * 0.5}px)`, // Adjust this value for desired speed and position
             left: '50%',
             transform: 'translate(-50%, -50%)',
             zIndex: 2,

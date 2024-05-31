@@ -1,5 +1,8 @@
 body {
-  background: #d8eef3;
+  background-image: url("/DYF/public/assets/sandbg.jpg");
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed;
   min-height: 1500px;
 }
 
