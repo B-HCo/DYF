@@ -6,6 +6,7 @@ import Orders from './Orders';
 import Cart from './Cart';
 import Login from './Login';
 import api from './api';
+import ParallaxBG from './Components/ParallaxBG';
 
 const App = ()=> {
   const [products, setProducts] = useState([]);
@@ -85,6 +86,7 @@ const App = ()=> {
 
   return (
     <div>
+       <ParallaxBG/> 
       {
         auth.id ? (
           <>
