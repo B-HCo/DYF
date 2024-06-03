@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 const ParallaxBG = () => {
   const [bgStyle, setBgStyle] = useState({ top: 0 });
-  const [moonStyle, setMoonStyle] = useState({ left: 0, top: 0 });
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
@@ -10,7 +9,6 @@ const ParallaxBG = () => {
       setScrollPosition(window.scrollY);
       const value = window.scrollY;
       setBgStyle({ top: value * 0.5 });
-      setMoonStyle({ left: value * 0.5, top: value * 0.5 });
     };
 
     window.addEventListener('scroll', handleScroll);
