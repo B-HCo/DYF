@@ -5,16 +5,11 @@
 
 body {
 
-  background-image: url("/DYF/public/assets/sandbg.jpg");
-  background-size: cover; 
+  /* background-image: url("/DYF/public/assets/sandbg.jpg"); */
+  /* background-size: cover; 
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #131313;
 }
 
 .container {
@@ -55,9 +50,6 @@ body {
   font-weight: 800;
   font-style: italic;
   color: rgba(255,255,255,0.04);
-
-  background: #d8eef3;
-  min-height: 1500px;
 }
 
 section {
