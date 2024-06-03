@@ -139,3 +139,23 @@ form > * {
   height: 20%;
   width: 20%;
 } */
+
+.parallax-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.parallax-text {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
