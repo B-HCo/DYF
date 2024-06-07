@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import ProductImageEditor from './ProductImageEditor';
-import Card from './components/Card';
+import Card from './Components/Card';
 
 const Products = ({ products, cartItems, createLineItem, updateLineItem, auth, updateProduct})=> {
   
